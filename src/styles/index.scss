@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
 
 /*
 
@@ -17,17 +18,34 @@ body {
  .digit {
     display: inline-block;
     font-size: 40px;
-    line-height: 20px;
+    line-height: 40px;
     color: red;
     margin-left: 20px;
     border: 1px solid red;
     padding: 60px;
     height: 142px;
+    font-family: 'Share Tech', sans-serif;
+
+
+
 }
 
+p {
+            animation: fadein 2s;
+
+}
 
 .bigCounter {
 margin:auto;
 width: 80%;
 margin-top: 400px
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
